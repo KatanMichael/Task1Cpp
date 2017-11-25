@@ -27,7 +27,6 @@ void Circle::setColor(int color) { this->color = color; }
 bool Circle::contains(const Point & p) const 
 {
 	int x, y, r;
-	r = 
 	int x1 = center.getX(), y1 = center.getY();
 	int x2 = p.getX(),		y2 = p.getY();
 	x = x1 - x2;
