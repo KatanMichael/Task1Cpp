@@ -53,7 +53,10 @@ Collection::~Collection() {
 Circle & Collection::getCircleAt(const Point & p) {
 	for (int i = 0; i < count; i++)
 		if (circles[i]->contains(p))
+		{
 			return *(circles[i]);
+		}
+	else return NULL;
 }
 
 void Collection::print() const {
